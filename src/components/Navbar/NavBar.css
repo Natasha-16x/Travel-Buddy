@@ -1,3 +1,17 @@
+/* added styling to navbar*/
 
+.my-navbar {
+    background-color: rgb(241, 187, 39);
+}
+
+.my-navbar .navbar-brand {
+    font-size: 40px;
+    color: black;
+}
+
+.my-navbar .nav-link {
+    font-size: 20px;
+    color: black;
+}
 
 
