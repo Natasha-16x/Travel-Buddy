@@ -1,18 +1,15 @@
-import './App.css';
+import React from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
+import MyNavbar from './components/Navbar/Navbar';
 
-import Navbar from './components/Navbar/Navbar';
-import HomePage from './components/HomePage/HomePage';
 
-const App = () => {
+function App() {
   return (
     <div>
-      <Navbar/>
-      <HomePage />
+      <MyNavbar />
     </div>
-  
-      
-      
-  )
+  );
 }
 
 export default App;
+
