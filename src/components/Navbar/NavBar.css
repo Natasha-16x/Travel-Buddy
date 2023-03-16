@@ -2,6 +2,7 @@
 
 .my-navbar {
     background-color: rgb(241, 187, 39);
+    height: 100px;
 }
 
 .my-navbar .navbar-brand {
@@ -9,9 +10,12 @@
     color: black;
 }
 
+
 .my-navbar .nav-link {
     font-size: 20px;
     color: black;
+    padding-right: 20px;
+    float: right;
 }
 
 
