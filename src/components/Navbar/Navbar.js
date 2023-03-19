@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-import './navbar.css';
+import './NavBar.css';
 
 // function to create navbar 
 
@@ -10,7 +10,7 @@ function MyNavbar() {
         <Navbar.Brand href="#">Navbar</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
+          <Nav className="ms-auto">
             <Nav.Link href="#">Home Page</Nav.Link>
             <Nav.Link href="#">Recommendations</Nav.Link>
             <Nav.Link href="#">Contact Us</Nav.Link>

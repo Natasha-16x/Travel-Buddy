@@ -1,8 +1,9 @@
 import React from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
 
 function Footer() {
   return (
-    <footer className="bg-dark text-white">
+    <footer className="bg-dark text-white fixed-bottom">
       <div className="container py-3">
         <div className="row">
           <div className="col text-center">
