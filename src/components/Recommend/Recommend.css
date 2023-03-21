@@ -28,8 +28,9 @@
 /* img */
 
 .mainContent{
-    padding: 2rem 0;
+    padding: 1rem ;
     gap: 1rem;
+    
 }
 .singleCard{
     overflow: hidden;
