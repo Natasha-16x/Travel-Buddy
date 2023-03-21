@@ -8,17 +8,20 @@ const Recommend = () => {
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((position) => {
+      console.log(position);
       const options = {
         method: 'GET',
         url: 'https://travel-advisor.p.rapidapi.com/attractions/list-by-latlng',
         params: {
-          longitude: position.coords.latitude,
-          latitude: position.coords.longitude,
-          limit: '5', lang: 'en_uk'},
+          longitude: position.coords.longitude,
+          latitude:  position.coords.latitude,
+          limit: '5'},
         headers: {
           'X-RapidAPI-Key': '0586ce2981msh0c6ede4dfb0d4d1p110fe6jsndf745b79a66f',
           'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
-        }
+        },
+         
+        
       };
 
       axios
