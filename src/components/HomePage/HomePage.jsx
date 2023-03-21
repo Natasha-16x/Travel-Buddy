@@ -10,26 +10,26 @@ function HomePage() {
     setSearchInput(e.target.value);
   };
 
-  useEffect(() => {
-    const options = {
-      method: "GET",
-      url: 'https://travel-places.p.rapidapi.com/',
-      headers: {
-        "X-RapidAPI-Key": "0586ce2981msh0c6ede4dfb0d4d1p110fe6jsndf745b79a66f",
-        "X-RapidAPI-Host": "travel-places.p.rapidapi.com",
-      },
-    };
+  // useEffect(() => {
+  //   const options = {
+  //     method: "GET",
+  //     url: 'https://travel-places.p.rapidapi.com/',
+  //     headers: {
+  //       "X-RapidAPI-Key": "0586ce2981msh0c6ede4dfb0d4d1p110fe6jsndf745b79a66f",
+  //       "X-RapidAPI-Host": "travel-places.p.rapidapi.com",
+  //     },
+  //   };
 
-    axios
-      .request(options)
-      .then(function (response) {
-        console.log(response.data);
-        setCountries(response.data);
-      })
-      .catch(function (error) {
-        console.error(error);
-      });
-  }, []);
+  //   axios
+  //     .request(options)
+  //     .then(function (response) {
+  //       console.log(response.data);
+  //       setCountries(response.data);
+  //     })
+  //     .catch(function (error) {
+  //       console.error(error);
+  //     });
+  // }, []);
 
   const filteredCountries = countries.filter((country) =>
     country.name.toLowerCase().includes(searchInput.toLowerCase())
