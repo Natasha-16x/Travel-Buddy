@@ -1,0 +1,12 @@
+/* added styling to the footer */ 
+.link {
+    color: white;
+}
+
+
+.links-container {
+    display: flex;
+    justify-content: space-between; /* or "space-between" for more space between links */
+    align-items: center;
+  }
+  
