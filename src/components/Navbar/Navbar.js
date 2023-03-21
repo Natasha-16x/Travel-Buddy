@@ -8,7 +8,7 @@ function MyNavbar() {
     return (
       <Navbar bg="light" expand="lg" className="my-navbar">
         <Navbar.Brand href="#">Navbar</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className='me-2'/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href="#">Home Page</Nav.Link>
@@ -21,3 +21,5 @@ function MyNavbar() {
 }
 
 export default MyNavbar;
+
+//  Left Item--------------------------Right Items
