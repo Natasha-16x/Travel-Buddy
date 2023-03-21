@@ -1,0 +1,18 @@
+/* added styling to navbar*/
+
+.my-navbar {
+    height: 100px;
+}
+
+.my-navbar .navbar-brand {
+    font-size: 40px;
+    color: black;
+}
+
+
+.my-navbar .nav-link {
+    font-size: 20px;
+    color: black;
+}
+
+
