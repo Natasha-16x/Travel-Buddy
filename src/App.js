@@ -1,22 +1,22 @@
-import './App.css';
+import React from 'react';
+import MyNavbar from './components/Navbar/Navbar';
+import Footer from './components/footer/footer';
 import SearchResult from './components/DisplayResults/display';
 
 
-import Navbar from './components/Navbar/Navbar';
-import HomePage from './components/HomePage/HomePage';
+import Recommend from './components/Recommend/Recommend';
 
-const App = () => {
+function App() {
   return (
     <div>
-    
-      <HomePage />
+      <MyNavbar />
+      <Footer />
+      <Recommend />
       <SearchResult/>
      
     </div>
-  
-      
-      
-  )
+  );
 }
 
 export default App;
+
