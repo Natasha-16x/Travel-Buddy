@@ -2,9 +2,8 @@ import React from 'react';
 import MyNavbar from './components/Navbar/Navbar';
 import Footer from './components/footer/footer';
 import SearchResult from './components/DisplayResults/display';
-
-
 import Recommend from './components/Recommend/Recommend';
+
 
 function App() {
   return (
@@ -13,6 +12,7 @@ function App() {
       <Footer />
       <Recommend />
       <SearchResult/>
+   
      
     </div>
   );

@@ -27,19 +27,27 @@
 
 /* img */
 
+
 .mainContent{
-    padding: 1rem ;
-    gap: 1rem;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    transform: 'translateX(-${slideIndex * 100}%)';
 }
+
 .singleCard{
+    margin-bottom: 3rem;
+    flex-grow: 0;
+    flex-shrink: 0;
     overflow: hidden;
-    border-radius: 1rem;
+    flex-basis: calc(33.33% - 1rem);
     box-shadow: 0 2px 8px 2px black;
+    flex: 0 0 calc(33.33% - 1rem);
 }
 
 .cardImage{
-    height: 25rem;
+    height: 20rem;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -92,7 +100,6 @@ img{
     font-family: 700;
     color: black;
     position: relative;
-    width: max-content;
 }
 
 .number::after{
