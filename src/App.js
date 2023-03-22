@@ -4,6 +4,7 @@ import Footer from './components/footer/footer';
 import SearchResult from './components/DisplayResults/display';
 import Recommend from './components/Recommend/Recommend';
 
+
 function App() {
   return (
     <div>
@@ -11,6 +12,7 @@ function App() {
       <Footer />
       <Recommend />
       <SearchResult/>
+   
      
     </div>
   );

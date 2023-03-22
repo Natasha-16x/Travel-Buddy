@@ -6,8 +6,8 @@ const config = {
     query: 'canada', lang: 'en_US', units: 'km'
   },
   headers: {
-    'X-RapidAPI-Key': '016665576cmsh8970194c21e154ep1f788djsn2184cb3e8d08',
-    'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
+    // 'X-RapidAPI-Key': '',
+    // 'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
   }
 }
 
@@ -15,6 +15,7 @@ const config = {
 const SearchResult = () => {
   const [searchResults, setSearchResults] = useState([]);
 
+  // eslint-disable-next-line no-unused-vars
   const fetchData = async () => {
     axios.get(`https://travel-advisor.p.rapidapi.com/locations/v2/auto-complete`, config)
     .then(res => {
@@ -26,11 +27,13 @@ const SearchResult = () => {
       console.error(`Error: ${error}`)
     });
     
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useEffect(() => {
+      fetchData()
+    })
+    
   };
 
-  useEffect(() => {
-    fetchData();
-  }, []);
 
 
   
