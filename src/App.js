@@ -3,7 +3,7 @@ import MyNavbar from './components/Navbar/Navbar';
 import Footer from './components/footer/footer';
 import SearchResult from './components/DisplayResults/display';
 import Recommend from './components/Recommend/Recommend';
-
+import SearchBar from './components/Search/SearchBar';
 
 function App() {
   return (
@@ -11,9 +11,8 @@ function App() {
       <MyNavbar />
       <Footer />
       <Recommend />
+      <SearchBar />
       <SearchResult/>
-   
-     
     </div>
   );
 }
