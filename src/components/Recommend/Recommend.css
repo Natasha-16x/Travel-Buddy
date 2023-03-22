@@ -27,32 +27,11 @@
 
 /* img */
 
-/* .mainContent{
-    padding: 1rem ;
-    gap: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-} */
-
-/* .singleCard{
-    overflow: hidden;
-    border-radius: 1rem;
-    box-shadow: 0 2px 8px 2px black;
-} */
-/* .singleCard{
-    overflow: hidden;
-    border-radius: 1rem;
-    box-shadow: 0 2px 8px 2px black;
-    flex: 0 0 calc(33.33% - 2rem);
-    margin: 1rem;
-} */
 
 .mainContent{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* gap: 3rem; */
     padding: 1rem;
     transform: 'translateX(-${slideIndex * 100}%)';
 }
@@ -121,7 +100,6 @@ img{
     font-family: 700;
     color: black;
     position: relative;
-    /* width: max-content; */
 }
 
 .number::after{
