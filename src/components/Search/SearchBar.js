@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import { Typography, Box, TextField, Autocomplete } from '@mui/material'
-import FilterProducts from './FilterProducts';
-import { fetchData } from './fetchData';
 
 
-function App() {
+
+function SearchBar() {
  const [input, setInput] = useState('')
  const [list, setList] = useState([]);
 
@@ -51,4 +50,4 @@ function App() {
  );
 }
 
-export default App;
+export default SearchBar;
