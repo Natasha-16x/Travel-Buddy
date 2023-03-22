@@ -27,19 +27,53 @@
 
 /* img */
 
-.mainContent{
+/* .mainContent{
+    padding: 1rem ;
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
+
+/* .mainContent{
     padding: 1rem ;
     gap: 1rem;
     
-}
-.singleCard{
+} */
+/* .singleCard{
     overflow: hidden;
     border-radius: 1rem;
     box-shadow: 0 2px 8px 2px black;
+} */
+/* .singleCard{
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px 2px black;
+    flex: 0 0 calc(33.33% - 2rem);
+    margin: 1rem;
+} */
+
+.mainContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* gap: 3rem; */
+    padding: 1rem;
+    transform: 'translateX(-${slideIndex * 100}%)';
+}
+
+.singleCard{
+    margin-bottom: 3rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    overflow: hidden;
+    flex-basis: calc(33.33% - 1rem);
+    box-shadow: 0 2px 8px 2px black;
+    flex: 0 0 calc(33.33% - 1rem);
 }
 
 .cardImage{
-    height: 25rem;
+    height: 20rem;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -92,7 +126,7 @@ img{
     font-family: 700;
     color: black;
     position: relative;
-    width: max-content;
+    /* width: max-content; */
 }
 
 .number::after{
