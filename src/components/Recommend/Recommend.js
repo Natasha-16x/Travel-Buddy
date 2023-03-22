@@ -15,11 +15,12 @@ const Recommend = () => {
         params: {
           longitude: position.coords.longitude,
           latitude:  position.coords.latitude,
-          limit: '6'},
-        headers: {
-          'X-RapidAPI-Key': '386e9f68cbmsh8084ffcb2a03606p12b177jsn3a93e4fd226a',
-          'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
-        },
+          lunit: 'km',
+          limit: '12'},
+        // headers: {
+        //   'X-RapidAPI-Key': '386e9f68cbmsh8084ffcb2a03606p12b177jsn3a93e4fd226a',
+        //   'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
+        // },
       };
 
       axios
