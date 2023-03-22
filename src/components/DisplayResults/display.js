@@ -36,7 +36,7 @@ const SearchResult = () => {
 
 
   
-const SearchResultCard = ({ searchResult }) => {
+/* const SearchResultCard = ({ searchResult }) => {
   return (
     <div className="card">
       <div className="card-body">
@@ -71,7 +71,7 @@ const SearchResultCard = ({ searchResult }) => {
     <div className="container">
       {rows}
     </div>
-  );
+  ); */
 };
 
 
