@@ -57,7 +57,7 @@ const Recommend = () => {
   const endIndex = Math.min((slideIndex + 1) * 3, attractions.length);
 
   return (
-    <section className='recommended section container'>
+    <section className='recommended'>
       <div className='secContainer'>
         <h1>Recommended Attractions</h1>
         <div className='iconsDiv flex'>
