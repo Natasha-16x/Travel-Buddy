@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+/* --------------------- */
+.home{
+  height: 70vh;
+  background: linear-gradient(rgba(33,33,33,0.522), rgba(33,33,33,0.522)),
+  url('/public/MacBook\ Air\ -\ 3.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.homeText{
+  text-align: center;
+}
+.title{
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+.subTitle{
+  color: white;
+  opacity: 0.9;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 1rem 0;
+  text-align: center;
+  margin: auto;
+
+}
+.btn{
+  padding: .6rem 1.5rem;
+  background: rgb(142, 142, 241);
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  cursor: pointer;
+}

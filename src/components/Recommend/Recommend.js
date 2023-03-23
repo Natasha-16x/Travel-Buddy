@@ -17,10 +17,10 @@ const Recommend = () => {
           latitude:  position.coords.latitude,
           lunit: 'km',
           limit: '12'},
-        // headers: {
-        //   'X-RapidAPI-Key': '386e9f68cbmsh8084ffcb2a03606p12b177jsn3a93e4fd226a',
-        //   'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
-        // },
+        headers: {
+          // 'X-RapidAPI-Key': '386e9f68cbmsh8084ffcb2a03606p12b177jsn3a93e4fd226a',
+          // 'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
+        },
       };
 
       axios
@@ -57,7 +57,7 @@ const Recommend = () => {
   const endIndex = Math.min((slideIndex + 1) * 3, attractions.length);
 
   return (
-    <section className='recommended section container'>
+    <section className='recommended'>
       <div className='secContainer'>
         <h1>Recommended Attractions</h1>
         <div className='iconsDiv flex'>
