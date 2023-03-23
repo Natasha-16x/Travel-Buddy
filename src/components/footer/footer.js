@@ -5,7 +5,7 @@ import './footer.css'
 // added links to github accounts 
 function Footer() {
   return (
-    <footer className="bg-dark text-white fixed-bottom">
+    <footer className="bg-dark text-white bottom">
       <div className="container py-3">
         <div className="row">
           <div className="col text-center">
