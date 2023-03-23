@@ -42,3 +42,4 @@ Travel Buddy Screenshot
 ![screencapture-localhost-3000-2023-03-23-16_46_23](https://user-images.githubusercontent.com/70776430/227279316-983a0022-ec08-4c9a-8b57-39f1283813fa.png)
 
 ### Link to Deployed Application
+https://silver-nasturtium-ea9f89.netlify.app/
