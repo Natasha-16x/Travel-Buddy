@@ -10,3 +10,14 @@
     align-items: center;
   }
   
+.py-3{
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.bottom {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}
