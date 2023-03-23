@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Col, Row } from "react-bootstrap";
 import CardUI from "../cardUI/card";
+// import SearchBar from './components/Search/SearchBar';
 
-function SearchResult() {
-  // eslint-disable-next-line no-use-before-define
-  const { searchQuery } = searchQuery();
+function SearchResult([searchQuery , setSearchQuery]) {
   const [searchResults, setSearchResults] = useState([]);
+  const [SearchBar] = searchQuery['']
 
   useEffect(() => {
     const options = {
@@ -31,11 +31,11 @@ function SearchResult() {
         console.log(response.data);
         setSearchResults(
           response.data.data.map((result) => ({
-            id: result.name, // Pattaya
-            longid: result.location_string,
-            locationZone: result.timezone, //asia/Bangkok"
-            description: result.geo_description,
-            img: result.photo.images.medium.url,
+            id: result.result_object.location_id,
+            name: result.result_object.name,
+            locationZone: result.result_object.time_zone,
+            description: result.result_object.geo_description,
+            img: result.result_object.photo.images.medium.url,
           }))
         );
       })
@@ -44,18 +44,25 @@ function SearchResult() {
       });
   }, [searchQuery]);
 
+  const handleSearchQueryChange = (query) => {
+    setSearchQuery(query);
+  };
+
   return (
-    <Row>
-      {searchResults.map((result) => (
-        <Col key={result.id} md={3}>
-          <CardUI
-            title={result.id}
-            img={result.img}
-            text={result.description}
-          />
-        </Col>
-      ))}
-    </Row>
+    <>
+      <SearchBar setSearchQuery={handleSearchQueryChange} />
+      <Row>
+        {searchResults.map((result) => (
+          <Col key={result.id} md={3}>
+            <CardUI
+              title={result.name}
+              img={result.img}
+              text={result.description}
+            />
+          </Col>
+        ))}
+      </Row>
+    </>
   );
 }
 
